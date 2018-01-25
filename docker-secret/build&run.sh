@@ -3,4 +3,4 @@ docker build . -t test:1.0
 docker secret create secret_data secret
 #docker run -d -p 8080:8080 --name tester test:1.0
 docker service create -p 8080:8080 --secret secret_data --name tester test:1.0
-echo "Run 'docker logs <container-id>' to check the python logs regarding the replacement of data"
+echo "[INFO] --> Run 'docker logs <container-id>' to check the python logs regarding the replacement of data"

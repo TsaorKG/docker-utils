@@ -13,6 +13,9 @@ RUN apt-get update \
 
 COPY ./replace_dicovar.py $HOME 
 COPY ./entrypoint.sh $HOME
+COPY ./index-origin.html $HOME
+COPY ./index.html.ref $HOME
+COPY ./style.css $HOME
 
 RUN groupadd -r -g 808 lambda \
     && useradd -r -g 808 -u 808 -d $HOME lambda \

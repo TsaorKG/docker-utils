@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Docker-Secret</title>
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <div id="logo">
+                        <h1><strong>Docker-Secret</strong></h1>    
+                    </div>
+                    <h2>Web documentation</h2>
+                </div>
+                <nav id="home">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="separateur">
+                <h4>____________________________________________</h4>
+            </div>
+            <div id="corps">
+                <h2>Hello %%NAME%%</h2>
+                <p>Today we are the %%DATE%%</p>
+                <p>Thank you for sharing you password : %%PASSWORD%%</p>
+                <p>I'm using the port %%PORT%%</p>
+                <p>You can find the original webpage (before replacement) <a href="index-origin.html">here</a></p>
+            </div>
+            <div id="separateur">
+                <h4>____________________________________________</h4>
+            </div>
+            <footer>
+                    <p id="github">Find the sources <a href="https://github.com/GabrielWal/docker-utils/tree/master/docker-secret">here</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

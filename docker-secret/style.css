@@ -1,0 +1,56 @@
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+header h1
+{
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+header h2
+{
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#bloc_page {
+    margin: 0 auto;
+    width: ___px;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-left: auto;
+    margin-right: auto;
+}
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #0467d8;
+    border-bottom: 3px solid #0467d8;
+}
+
+a:hover
+{
+    color: #0467d8;
+}

@@ -441,7 +441,7 @@ def main():
 
       dictionary = sys.argv[2]
 
-      getAllEnvProp(dictionary)
+      #getAllEnvProp(dictionary)
 
       print("\033[94m" + "[INFO]" + " \033[0m" + "    ---[ Starting verification ]---")
 

@@ -3,9 +3,10 @@ This folder contains a variety of scripts that could be use in order to facilita
 
 ## Cluster Swarm + VM d'admin
 In the case we have the following architecture --> a cluster swarm paired with an administration server with ssh capabilities on the whole cluster.
-______________     SSH   ______________
-|  VM admin  |_ _ _ _ _ _|Docker-Swarm|
-|____________|           |____________|
+
+    ______________     SSH   ______________
+    |  VM admin  |_ _ _ _ _ _|Docker-Swarm|
+    |____________|           |____________|
 
 ### exec_container.sh
 |This scripts is to be used on the VM admin|

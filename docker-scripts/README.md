@@ -1,4 +1,4 @@
-# Docker Scripts
+# Docker Scripts <a href="../docker-scripts"><img src="../images/script.png" alt="alt text" width="50px" height="50px"></a>
 This folder contains a variety of scripts that could be use in order to facilitate the work of DevOps team.
 
 ## Cluster Swarm + VM d'admin

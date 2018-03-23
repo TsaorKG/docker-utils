@@ -26,8 +26,8 @@ Configure the script :
     > Set the ssh private key path 
 
 Then simply call the script with the name of the service your container belongs to.
-Sample : 
-> ./exec_container.sh drupal
+    Sample : 
+    admin@adminHost:~$ ./exec_container.sh drupal
 
 #### Adds-on 
 In the given command you will also see a 'stty cols \*value\*' this is done in order to avoid term size issues. 
@@ -51,5 +51,5 @@ Configure the script :
     > Set the ssh private key path 
 
 Then simply call the script with the name of the service your container belongs to.
-Sample : 
-> ./inspect.sh drupal
+    Sample : 
+    admin@adminHost:~$ ./inspect.sh drupal

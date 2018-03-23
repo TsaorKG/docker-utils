@@ -26,6 +26,7 @@ Configure the script :
     > Set the ssh private key path 
 
 Then simply call the script with the name of the service your container belongs to.
+
     Sample : 
     admin@adminHost:~$ ./exec_container.sh drupal
 
@@ -51,5 +52,6 @@ Configure the script :
     > Set the ssh private key path 
 
 Then simply call the script with the name of the service your container belongs to.
+
     Sample : 
     admin@adminHost:~$ ./inspect.sh drupal

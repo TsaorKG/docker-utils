@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Docker-Secret</title>
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <div id="logo">
+                        <h1><strong><font color="blue">BLUE</font>-<font color="green">GREEN</font> DEPLOYMENT</strong></h1>    
+                    </div>
+                    <h2>Sample App</h2>
+                </div>
+                <nav id="home">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="separateur">
+                <h4>____________________________________________</h4>
+            </div>
+            <div id="corps">
+                <h2>Hello</h2>
+                <p>Welcome to the %%COLOR%% application</p>
+            </div>
+            <div id="separateur">
+                <h4>____________________________________________</h4>
+            </div>
+        </div>
+    </body>
+</html>

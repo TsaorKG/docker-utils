@@ -1,0 +1,23 @@
+version: '3.1'
+
+networks:
+  frontend:
+    driver: overlay
+
+secrets:
+  secret_data_blue:
+    external: true
+
+services:
+  app:
+    image: 127.0.0.1:5000/bg-app
+    environment:
+      - COLOR=blue
+    hostname: app
+    secrets:
+      - source: secret_data_blue
+    networks:
+      frontend:
+        aliases:
+         - blue-app
+

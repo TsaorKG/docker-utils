@@ -1,5 +1,5 @@
 # Blue-Green deployment
-This folder contains a ready to use example of a blue green deployment strategy
+This folder contains a ready to use example of a blue green deployment strategy running in a swarm mode
 <a href="../blue-green-deployment"><img src="../images/bg.png" alt="alt text"></a>
 
 ## How to ? 
@@ -43,4 +43,39 @@ You should have an output like below
     green
     green
 
+## Prerequisite
+This project requires
 
+> docker
+> docker-compose
+
+It has been tested with the following versions
+
+#### Docker
+
+    Client:
+     Version:	18.03.0-ce
+     API version:	1.37
+     Go version:	go1.9.4
+     Git commit:	0520e24
+     Built:	Wed Mar 21 23:06:22 2018
+     OS/Arch:	darwin/amd64
+     Experimental:	false
+     Orchestrator:	swarm
+
+    Server:
+     Engine:
+     Version:	18.03.0-ce
+     API version:	1.37 (minimum version 1.12)
+     Go version:	go1.9.4
+     Git commit:	0520e24
+     Built:	Wed Mar 21 23:14:32 2018
+     OS/Arch:	linux/amd64
+     Experimental:	false
+
+#### Docker-Compose
+
+    docker-compose version 1.20.1, build 5d8c71b
+    docker-py version: 3.1.4
+    CPython version: 3.6.4
+    OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017

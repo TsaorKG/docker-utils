@@ -46,8 +46,8 @@ You should have an output like below
 ## Prerequisite
 This project requires
 
-> docker
-> docker-compose
+    docker
+    docker-compose
 
 It has been tested with the following versions
 

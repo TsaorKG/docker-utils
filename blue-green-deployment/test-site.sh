@@ -4,4 +4,6 @@
 while true
 do
 	curl localhost:80/color.html
+    echo ""
+    sleep 0.5
 done

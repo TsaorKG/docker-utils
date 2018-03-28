@@ -16,6 +16,7 @@ RUN apt-get update \
 COPY ./replace_dicovar.py $HOME 
 COPY ./entrypoint.sh $HOME
 COPY ./index.html.ref $HOME
+COPY ./color.html.ref $HOME
 COPY ./style.css $HOME
 
 RUN chmod -R 777 $HOME

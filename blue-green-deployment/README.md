@@ -21,3 +21,5 @@ Then use the switch script:
 
 This will switch from current color blue to green.
 The next time you call switch it will swith from green to blue.
+
+In order to test the switch use the test-site script which will infinitely curl the color page of the sample app. This will show the impact of the switch.

@@ -27,6 +27,7 @@
             <div id="corps">
                 <h2>Hello</h2>
                 <p>Welcome to the %%COLOR%% application</p>
+                <p>Find the color page <a href="color.html">here</a>.</p>
             </div>
             <div id="separateur">
                 <h4>____________________________________________</h4>

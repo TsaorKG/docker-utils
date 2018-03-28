@@ -1,5 +1,6 @@
 # Blue-Green deployment
 This folder contains a ready to use example of a blue green deployment strategy
+<a href="../blue-green-deployment"><img src="../images/bg.png" alt="alt text"></a>
 
 ## How to ? 
 Clone the repository:

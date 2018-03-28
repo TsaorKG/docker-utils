@@ -7,6 +7,11 @@ G='\033[0;32m'
 C='\033[0;36m'
 NC='\033[0m'
 echo -e "${C}STARTING ${NC}${B}BLUE${NC}${C}-${NC}${G}GREEN${NC}${C} DEPLOYMENT SAMPLE${NC}"
+echo -e "${B}[ ][ ][ ][ ][ ][ ]${NC}    ${G}[ ][ ][ ][ ][ ][ ]${NC}"
+echo -e "${B}[ ][ ][ ][ ][ ][ ]${NC}    ${G}[ ][ ][ ][ ][ ][ ]${NC}"
+echo -e "${B}[ ][ ][ ][ ][ ][ ]${NC}${C}<-->${NC}${G}[ ][ ][ ][ ][ ][ ]${NC}"
+echo -e "${B}[ ][ ][ ][ ][ ][ ]${NC}    ${G}[ ][ ][ ][ ][ ][ ]${NC}"
+echo -e "${B}[ ][ ][ ][ ][ ][ ]${NC}    ${G}[ ][ ][ ][ ][ ][ ]${NC}"
 echo -e "${C}[INFO] >>> Creating local registry${NC}"
 docker service create \
   --name registry \

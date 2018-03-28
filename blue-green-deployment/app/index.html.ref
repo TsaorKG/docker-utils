@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
-        <title>Docker-Secret</title>
+        <title>Blue-Green deployment</title>
     </head>
     
     <body>
@@ -32,6 +32,9 @@
             <div id="separateur">
                 <h4>____________________________________________</h4>
             </div>
+            <footer>
+                    <p id="github">Find the sources <a href="https://github.com/GabrielWal/docker-utils/tree/master/blue-green-deployment">here</a></p>
+            </footer>
         </div>
     </body>
 </html>

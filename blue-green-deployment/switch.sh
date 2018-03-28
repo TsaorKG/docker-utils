@@ -20,11 +20,11 @@ echo -e "${C}Scaling container blue-green to 2${NC}"
 docker service scale test_bg=2
 if [ $COLOR = "blue" ]; then
     echo -e "${G}Switching to green stack${NC}"
-    docker service update --env-add COLOR=green --update-delay 1m test_bg
+    docker service update --env-add COLOR=green --update-delay 30s test_bg
     echo -e "${G}Green stack is online${NC}"
 else
     echo -e "${B}Switching to blue stack${NC}"
-    docker service update --env-add COLOR=blue --update-delay 1m test_bg
+    docker service update --env-add COLOR=blue --update-delay 30s test_bg
     echo -e "${B}Blue stack is online${NC}"
 fi
 echo -e "${C}Re-scaling container blue-green to 1${NC}"

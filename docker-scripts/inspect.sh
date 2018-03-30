@@ -8,6 +8,7 @@ MANAGER=''
 SSHKEY=''
 # Colors
 RED='\033[0;31m'
+C='\033[0;36m'
 NC='\033[0m'
 
 # Define inspect method

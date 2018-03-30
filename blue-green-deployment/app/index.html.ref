@@ -11,7 +11,7 @@
             <header>
                 <div id="titre_principal">
                     <div id="logo">
-                        <h1><strong><font color="blue">BLUE</font>-<font color="green">GREEN</font> DEPLOYMENT</strong></h1>    
+                        <h1><strong>BLUE-GREEN DEPLOYMENT</strong></h1>    
                     </div>
                     <h2>Sample App</h2>
                 </div>

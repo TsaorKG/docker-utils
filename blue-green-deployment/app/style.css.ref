@@ -17,6 +17,7 @@ header h2
 }
 
 body {
+    background-color: %%COLOR%%;
     margin: 0;
     padding: 0;
 }

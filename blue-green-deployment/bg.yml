@@ -12,9 +12,12 @@ services:
     hostname: bg
     ports:
       - "80:80"
+      - "8443:8443"
     networks:
       - green_frontend
       - blue_frontend
+    deploy:
+      replicas:  2
 
 
 

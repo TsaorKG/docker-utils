@@ -16,8 +16,6 @@ else
 	COLOR=$(docker exec ${ID[0]} bash -c 'echo "$COLOR"')
     echo -e "${C}$COLOR stack is online${NC}"
 fi
-echo -e "${C}Scaling container blue-green to 2${NC}"
-docker service scale test_bg=2
 if [ $COLOR = "blue" ]; then
     echo -e "${G}Switching to green stack${NC}"
     echo -e "${B}[ ][ ][ ][ ][ ][ ]${NC}    ${G}[ ][ ][ ][ ][ ][ ]${NC}"
@@ -25,7 +23,7 @@ if [ $COLOR = "blue" ]; then
     echo -e "${B}[ ][ ][ ][ ][ ][ ]${NC}${C}--->${NC}${G}[ ][ ][ ][ ][ ][ ]${NC}"
     echo -e "${B}[ ][ ][ ][ ][ ][ ]${NC}    ${G}[ ][ ][ ][ ][ ][ ]${NC}"
     echo -e "${B}[ ][ ][ ][ ][ ][ ]${NC}    ${G}[ ][ ][ ][ ][ ][ ]${NC}"
-    docker service update --env-add COLOR=green --update-delay 30s test_bg
+    docker service update --stop-signal QUIT --stop-grace-period 1m --env-add COLOR=green test_bg
     echo -e "${G}Green stack is online${NC}"
 else
     echo -e "${B}Switching to blue stack${NC}"
@@ -34,8 +32,6 @@ else
     echo -e "${G}[ ][ ][ ][ ][ ][ ]${NC}${C}--->${NC}${B}[ ][ ][ ][ ][ ][ ]${NC}"
     echo -e "${G}[ ][ ][ ][ ][ ][ ]${NC}    ${B}[ ][ ][ ][ ][ ][ ]${NC}"
     echo -e "${G}[ ][ ][ ][ ][ ][ ]${NC}    ${B}[ ][ ][ ][ ][ ][ ]${NC}"
-    docker service update --env-add COLOR=blue --update-delay 30s test_bg
+    docker service update --stop-signal QUIT --stop-grace-period 1m --env-add COLOR=blue test_bg
     echo -e "${B}Blue stack is online${NC}"
 fi
-echo -e "${C}Re-scaling container blue-green to 1${NC}"
-docker service scale test_bg=1

@@ -34,4 +34,4 @@ echo -e "${C}[INFO] >>>${NC} ${G}Deploy stack green${NC}"
 export COLOR=green
 docker stack deploy -c app.yml green
 echo -e "${C}[INFO] >>> Deploy container ${B}Blue${NC}${C}-${NC}${G}Green${NC}${NC}"
-docker stack deploy -c bg.yml test
+docker stack deploy -c bg.yml bg

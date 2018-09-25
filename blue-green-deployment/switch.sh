@@ -23,7 +23,7 @@ if [ $COLOR = "blue" ]; then
     echo -e "${B}[ ][ ][ ][ ][ ][ ]${NC}${C}--->${NC}${G}[ ][ ][ ][ ][ ][ ]${NC}"
     echo -e "${B}[ ][ ][ ][ ][ ][ ]${NC}    ${G}[ ][ ][ ][ ][ ][ ]${NC}"
     echo -e "${B}[ ][ ][ ][ ][ ][ ]${NC}    ${G}[ ][ ][ ][ ][ ][ ]${NC}"
-    docker service update --stop-signal QUIT --stop-grace-period 1m --env-add COLOR=green test_bg
+    docker service update --stop-signal QUIT --stop-grace-period 1m --env-add COLOR=green bg_bg
     echo -e "${G}Green stack is online${NC}"
 else
     echo -e "${B}Switching to blue stack${NC}"
@@ -32,6 +32,6 @@ else
     echo -e "${G}[ ][ ][ ][ ][ ][ ]${NC}${C}--->${NC}${B}[ ][ ][ ][ ][ ][ ]${NC}"
     echo -e "${G}[ ][ ][ ][ ][ ][ ]${NC}    ${B}[ ][ ][ ][ ][ ][ ]${NC}"
     echo -e "${G}[ ][ ][ ][ ][ ][ ]${NC}    ${B}[ ][ ][ ][ ][ ][ ]${NC}"
-    docker service update --stop-signal QUIT --stop-grace-period 1m --env-add COLOR=blue test_bg
+    docker service update --stop-signal QUIT --stop-grace-period 1m --env-add COLOR=blue bg_bg
     echo -e "${B}Blue stack is online${NC}"
 fi

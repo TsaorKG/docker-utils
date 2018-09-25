@@ -6,7 +6,7 @@ G='\033[0;32m'
 C='\033[0;36m'
 NC='\033[0m'
 echo -e "${C}Starting the switch process${NC}"
-ID=$(docker ps -f 'name=test_bg' --format '{{.ID}}')
+ID=$(docker ps -f 'name=bg_bg' --format '{{.ID}}')
 if [ ${#ID[@]} -eq 0 ]; then
 	echo -e "${C}The service does not exist or is not running${NC}"
 elif [ ${#ID[@]} -eq 1 ]; then

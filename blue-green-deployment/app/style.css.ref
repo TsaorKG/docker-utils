@@ -17,7 +17,7 @@ header h2
 }
 
 body {
-    background-color: %%COLOR%%;
+    background-color: %%FONT_COLOR%%;
     margin: 0;
     padding: 0;
 }
